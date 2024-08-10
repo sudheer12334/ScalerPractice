@@ -1,0 +1,15 @@
+h1{
+  color: greenyellow;
+}
+.todoapp_container{
+  border: 1px solid red;
+  /* text-align: center; */
+  width:30%;
+  padding-left:80px;
+  margin-left: 400px;
+  height: auto;
+}
+.listitems_container{
+  color: magenta;
+
+}

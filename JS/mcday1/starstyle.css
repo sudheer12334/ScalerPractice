@@ -1,0 +1,17 @@
+.container{
+    /* display: flex; */
+   
+    text-align: center;
+}
+.star-container{
+    font-size: 40px;
+}
+.star{
+    padding: 5px;
+    color: grey;
+    cursor: pointer;
+}
+
+.star-filled {
+    color: green !important; 
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <!-- react is a ui manipulation (logic)library -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+
+    <!-- frontend -> dom  -->
+    <!-- react dom -> To get the actual changes in the DOM with the help of react DOM library  -->
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    
+    
+    <!-- to convert jsx to js  -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id='root'>
+        <script type="text/babel">
+            const styleObj={
+                btn:{
+                    background: 'aqua',
+
+                },
+                head:{
+                    color: 'magenta',
+                }
+            }
+            const Counter=()=>{
+               // let count=0;
+                const [count,setCount]=React.useState(0);
+                const [val,setVal]=React.useState('');
+                const increment=()=>{
+                    // count++;
+                    // console.log(count);
+                    setCount(Number(count)+1);
+                }
+                const decrement=()=>{
+                    // count--;
+                    // console.log(count);
+                    setCount(Number(count)-1);
+                }
+                const updateValue=(event)=>{
+                    const balue=event.target.value;
+                    setCount(balue);
+                }
+                return(
+                <div>
+                    <label>Value</label>
+                    <input type='number' onChange={updateValue} placeholder='enter'/>
+                    <button style={styleObj.btn} onClick={increment}>+</button>
+                    <span>{count}</span>
+                    <button style={styleObj.btn} onClick={decrement}>-</button>
+                </div>
+
+                )
+            }
+            const Main=()=>{
+                return(
+                    <div>
+                    <h1>Counter</h1>
+                    <div><Counter/></div>
+                </div>
+                )
+            }
+            //ReactDom.render(<Main/>,document.getElementById('root')); 
+            const root=ReactDOM.createRoot(document.getElementById('root'));
+            root.render(<Main/>);
+        </script>
+    </div>
+</body>
+</html>

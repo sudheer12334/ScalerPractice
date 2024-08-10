@@ -1,0 +1,34 @@
+/* .products{
+  border: 1 px solid blue;
+  
+  display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: flex-start;
+}
+.product{
+ 
+  border-radius: 1rem;
+    border: 3px solid #308585; */
+     /*overflow: hidden; /*Prevent content overflow */
+      /* display: flex;
+    flex-direction: column;
+    width: 20%; 
+} */
+/* 
+.product{
+  border: 2px solid salmon;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10%;
+} */

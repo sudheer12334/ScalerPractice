@@ -1,0 +1,65 @@
+<!DOCTYPE html><!--which represents that we are using latest version of HTML i.e HTML5--> 
+<html>
+    <head>
+        <title>Forms</title>
+        <link rel="stylesheet" href="./forms.css"/>
+    </head>
+    <body>
+        <form action="/submit" method="POST">
+            <h1>Contact</h1>
+            <div>
+            <label>Name</label>
+            </div>
+            <div>
+            <input type="text" placeholder="Your Name" name="name" required/>
+            </div>
+            <div>
+            <label>Email</label>
+            </div>
+            <div>
+            <input type="email" placeholder="Your Email" name="email"/>
+            </div>
+            <div>
+                <label for="cou">Phone</label>
+                </div>
+                <div>
+                <input type="number" placeholder="Your Mobile" name="phone" id="cou"/>
+                </div>
+            <div>
+             <label>Course Preference</label>
+            </div>
+            <div>
+             <label>DSA</label>   
+            <input type="checkbox" value="DSA" name="course"/>
+            <label>DSA</label> 
+            <input type="checkbox" value="DSML" name="course"/>
+            </div>
+            <div>
+                <label>Gender</label>
+               </div>
+               <div>
+                <label >Male</label>   
+               <input type="radio" value="male" name="gender"/>
+               <label>Female</label> 
+               <input type="radio" value="female" name="gender"/>
+               </div>
+            <label >Message</label>
+            </div>
+            <div>
+                <label>City</label>
+                <select name="city">
+                    <option value="blr">Bangalore</option>
+                    <option value="dlh">Delhi</option>
+                    <option value="hyd">Hyderabad</option>
+                    <option value="mum">Mumbai</option>
+                </select>
+            </div>
+            <div>
+            <textarea placeholder="Enter your message" name="message"></textarea>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

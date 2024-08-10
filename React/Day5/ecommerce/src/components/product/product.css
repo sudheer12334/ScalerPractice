@@ -1,0 +1,40 @@
+.product-item {
+    border-radius: 1rem;
+    border: 3px solid #308585;
+    overflow: hidden; /* Prevent content overflow */
+     display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+ 
+.product-details {
+    background-color:#308585;
+    padding: 1rem;
+     border-radius: 0.2rem;
+    flex: 0.4 0 0;
+}
+
+ .product-image {
+    border-radius: 0.5rem;
+    object-fit: contain;
+    object-position: center;
+    margin: 1rem;
+    flex: 1; /* Occupy available space */
+    height: 40%; 
+} 
+
+.product-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.buy-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price {
+    font-size: 1.4rem;
+} 

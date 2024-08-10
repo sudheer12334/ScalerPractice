@@ -1,0 +1,23 @@
+#alpha{
+    background-color: aqua;
+}
+.greek{
+    font-size: 20px;
+    color: blue;
+}
+li{
+    width:50%;
+}
+.firstOl li{
+    color:brown;
+}
+.geek li:first-child{
+    background-color: rgb(12, 135, 196);
+}
+.geek li:nth-child(3){
+    background-color: rgb(41, 180, 80) ;
+}
+li:hover{
+    background-color: purple !important;
+    font-size: 30px;
+}

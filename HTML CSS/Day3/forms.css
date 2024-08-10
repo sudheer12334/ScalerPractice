@@ -1,0 +1,6 @@
+input{
+    height: 40px;
+}
+form input[type=number]{
+    width:100%;
+}

@@ -1,0 +1,12 @@
+.heading{
+    background: #3fadad;
+}
+.container{
+    color:black;
+    text-align: center;
+}
+.text{
+    padding: 2em;
+    margin: 2em 0;
+    border: 1px solid black;
+}
